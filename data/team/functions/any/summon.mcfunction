@@ -3,9 +3,6 @@
 # チームを任意で指定するときのエンティティ
 #
 
-## TODO 座標は後々決める
-## 中央を決めてそこからチーム数分設置する。
-
 #きれいにする
 function team:any/kill
 
@@ -25,4 +22,3 @@ execute as @e[tag=SelectorCenter] at @s run tp @s ~ ~ ~ ~90 ~
 execute unless score TeamCount TeamNumber matches ..0 at @e[tag=SelectorCenter] run summon marker ^ ^ ^17 {Tags:["TeamSelector","YellowTeam"]}
 
 kill @e[tag=SelectorCenter]
-

@@ -23,7 +23,7 @@ execute if data storage team: {TeamCount:3} as @a[team=!watch_game,sort=random] 
 # 4チーム
 execute if data storage team: {TeamCount:4} as @a[team=!watch_game,sort=random] store result score @s TeamNumber as @e[limit=1] store result score @s Calc run scoreboard players remove @s[scores={Calc=-2..0}] Calc 1
 
-team leave @a
+team leave @a[team=!watch_game]
 team join red @a[scores={TeamNumber=..0}]
 team join blue @a[scores={TeamNumber=..-1}]
 team join green @a[scores={TeamNumber=..-2}]
