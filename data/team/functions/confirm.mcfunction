@@ -5,6 +5,7 @@
 
 # tick停止
 schedule clear team:tick
+function team:any/kill
 
 # チーム数を記録
 execute store result storage team: TeamCount int 1 run scoreboard players get TeamCount TeamNumber
