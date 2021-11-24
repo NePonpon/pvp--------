@@ -12,12 +12,13 @@ execute if entity @s[gamemode=!creative] run function control:item_set/no-creati
 execute if entity @s[gamemode=creative] run function control:item_set/select
 
 ## メニュー操作中タグ付与
-tp ~ ~ ~
-scoreboard players reset @s EnderChestClose
 tag @s add CtrlEnderChest
 
 ## メニュー操作tick起動
-function control:tick
+schedule function control:tick 1t
+
+## close検知準備
+item replace entity @s armor.head with stone_button{EnderChestClose:true}
 
 scoreboard players reset @s CtrlEnderChest
 advancement revoke @s only control:open-ender_chest

@@ -22,4 +22,3 @@ execute as @e[type=item,nbt={Age:0s}] run data modify entity @s PickupDelay set 
 ## 空にする
 data modify block 1 1 1 Items set value []
 loot replace entity @s enderchest.0 27 mine 1 1 1 debug_stick
-
