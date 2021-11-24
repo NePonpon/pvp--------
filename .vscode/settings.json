@@ -1,0 +1,115 @@
+{
+  "mcdutil.createDatapackTemplate.customTemplate": [
+    {
+      "label": "エンダーチェストメニュー",
+      "picked": false,
+      "description": "エンダーチェストのメニューを追加したいときのテンプレ",
+      "customQuestion": [
+        {
+          "question": "メニューの名前(Eng)を入力",
+          "name": "menuname"
+        },
+        {
+          "question": "フォルダーの名前(Eng)を入力",
+          "name": "menufolder",
+          "pattern": "([a-z0-9/._-])+",
+          "patternErrorMessage": "[a-z0-9/._-]以外の文字が含まれています。"
+        }
+      ],
+      "detail": "メニューをクリックした際に呼び出されるfunctionを生成します。メニューとフォルダーの名前の指定が必要です。",
+      "generates": [
+        {
+          "rel": "data/control/functions/menus/%menufolder%/check.mcfunction",
+          "type": "file",
+          "content": [
+            "#> control:menus/%menufolder%/check",
+            "",
+            "## このメニューが選ばれたら処理を実行",
+            "scoreboard players set @s CtrlEnderChest 0",
+            "execute store success score @s CtrlEnderChest run clear @s #control:all{JumpTo:\"%menuname%\"} 0",
+            "execute if score @s CtrlEnderChest matches 1 run function control:menus/%menufolder%/act/0",
+            ""
+          ]
+        },
+        {
+          "rel": "data/control/tags/functions/menus.json",
+          "type": "file",
+          "append": {
+            "key": "values",
+            "elem": "control:menus/%menufolder%/check"
+          },
+          "content": {
+            "values": [
+              "control:menus/%menufolder%/check"
+            ]
+          }
+        },
+        {
+          "rel": "data/control/functions/menus/%menufolder%/act/0.mcfunction",
+          "type": "file",
+          "content": [
+            "#> control:menus/%menufolder%/act/0",
+            "#",
+            "# 設定を変更したり、アイコンの内容を変更したりする",
+            "#",
+            "",
+            "",
+            "",
+            "## 同じページを再表示",
+            "function control:item_set/show",
+            ""
+          ]
+        },
+        {
+          "rel": "data/control/functions/menus/%menufolder%/initialize.mcfunction",
+          "type": "file",
+          "content": [
+            "#> control:menus/%menufolder%/initialize",
+            "#",
+            "# メニューのページ、位置、アイコン、説明などを設定",
+            "#",
+            "",
+            "# 初期化",
+            "data remove storage control:menu Initialize",
+            "data modify storage control:menu Initialize set value {tag:{CtrlEnderChest:true,JumpTo:\"%menuname%\"},Count:1b}",
+            "",
+            "## アイコンとなるアイテムを指定",
+            "data modify storage control:menu Initialize.id set value \"minecraft:\"",
+            "",
+            "## メニューの名前(JP)を指定",
+            "data modify storage control:menu Initialize.tag.display.Name set value '{\"text\":\"\"}'",
+            "",
+            "## 説明文を指定(任意)",
+            "#data modify storage control:menu Initialize.tag.display.Lore set value []",
+            "",
+            "## 表示するスロット番号を指定 byte型",
+            "data modify storage control:menu Initialize.Slot set value b",
+            "",
+            "## その他追加したい情報を指定(任意)",
+            "#data modify storage control:menu Initialize.tag merge value {}",
+            "",
+            "## 追加先のメニューページを指定(変更は任意)",
+            "data modify storage control:menu Menus.Player append from storage control:menu Initialize",
+            ""
+          ]
+        },
+        {
+          "rel": "data/control/tags/functions/menu_init.json",
+          "type": "file",
+          "append": {
+            "key": "values",
+            "elem": "control:menus/%menufolder%/initialize"
+          },
+          "content": {
+            "values": [
+              "control:menus/%menufolder%/initialize"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "mcdutil.createDatapackTemplate.defaultFolder": false,
+  "mcdutil.createDatapackTemplate.defaultLoadAndTick": false,
+  "mcdutil.createDatapackTemplate.defaultVanillaData": false
+}
