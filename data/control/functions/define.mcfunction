@@ -18,3 +18,7 @@
 
 #> tag/item
 #define tag/item control:all
+
+#> Predicates
+#define predicate control:low
+#define predicate control:high
