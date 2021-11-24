@@ -1,5 +1,6 @@
 {
     "values": [
-      "team:initialize"
+      "team:initialize",
+      "control:initialize"
     ]
 }
