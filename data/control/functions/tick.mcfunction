@@ -3,9 +3,6 @@
 # schedule tick loop
 #
 
-## エンダーチェストclose
-execute as @a[tag=CtrlEnderChest,scores={EnderChestClose=100..}] at @s run function control:close-ender_chest
-
 ## メニューアイテム選択
 execute as @a store success score @s CtrlEnderChest run clear @s #control:all{CtrlEnderChest:true} 0
 execute as @a[scores={CtrlEnderChest=1}] at @s run function control:menu_click

@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "close": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "player": [
+        ],
+        "items": [
+          {
+            "nbt": "{EnderChestClose:true}"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "control:close-ender_chest"
+  }
+}

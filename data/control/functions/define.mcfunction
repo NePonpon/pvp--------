@@ -6,7 +6,6 @@
 
 #> ScoreBoard-Object
 #define objective CtrlEnderChest
-#define objective EnderChestClose
 
 #> Tags
 #define tag CtrlEnderChest
