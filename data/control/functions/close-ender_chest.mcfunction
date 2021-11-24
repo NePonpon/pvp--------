@@ -3,8 +3,6 @@
 # エンダーチェストを閉じたとき処理
 #
 
-tellraw @a {"score":{"name":"@s","objective":"EnderChestClose"}}
-
 scoreboard players reset @s EnderChestClose
 tag @s remove CtrlEnderChest
 
