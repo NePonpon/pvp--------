@@ -3,7 +3,7 @@
 # メニューがクリックされたら実行
 #
 
-say control:menu_click
+scoreboard players set @s CtrlEnderChest 0
 
 ## 各メニュー別に分岐
 function #control:menus
