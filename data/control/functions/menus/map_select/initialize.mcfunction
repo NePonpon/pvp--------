@@ -14,7 +14,7 @@ data modify storage control:menu Initialize.id set value "minecraft:map"
 data modify storage control:menu Initialize.tag.display.Name set value '{"text":"map_select"}'
 
 ## 説明文を指定(任意)
-#data modify storage control:menu Initialize.tag.display.Lore set value [マップ選択画面を開く]
+data modify storage control:menu Initialize.tag.display.Lore set value ['{"text":"マップ選択画面を開く","color":"yellow","bold":true}']
 
 ## 表示するスロット番号を指定 byte型
 data modify storage control:menu Initialize.Slot set value 3b
