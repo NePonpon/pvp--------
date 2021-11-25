@@ -1,4 +1,4 @@
-#> control:item_set/clear
+#> control:menu_item/clear
 #
 # エンダーチェストにメニューをセットするとき
 # このfunctionを呼び出してきれいにすること

@@ -7,7 +7,7 @@ tag @s remove CtrlEnderChest
 clear @s stone_button{EnderChestClose:true}
 
 ## 余分なアイテムを返却
-function control:item_set/clear
+function control:menu_item/clear
 
 ## 確実にエンダーチェストを閉じる
 execute if predicate control:low run clone ~-3 0 ~-3 ~3 ~3 ~3 ~-3 0 ~-3 filtered minecraft:ender_chest force

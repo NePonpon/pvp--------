@@ -6,4 +6,4 @@
 scoreboard players add @s Common 1
 
 ## 同じページを再表示
-function control:item_set/show
+function control:menu_item/show

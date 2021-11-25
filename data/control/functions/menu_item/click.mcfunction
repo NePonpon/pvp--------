@@ -1,4 +1,4 @@
-#> control:menu_click
+#> control:menu_item/click
 #
 # メニューがクリックされたら実行
 #

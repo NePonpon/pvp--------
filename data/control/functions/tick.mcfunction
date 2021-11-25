@@ -5,7 +5,7 @@
 
 ## メニューアイテム選択
 execute as @a store success score @s CtrlEnderChest run clear @s #control:all{CtrlEnderChest:true} 0
-execute as @a[scores={CtrlEnderChest=1}] at @s run function control:menu_click
+execute as @a[scores={CtrlEnderChest=1}] at @s run function control:menu_item/click
 scoreboard players reset @a CtrlEnderChest
 
 ## tick loop

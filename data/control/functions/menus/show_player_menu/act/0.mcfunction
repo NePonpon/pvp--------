@@ -9,4 +9,4 @@ say ShowPlayerMenu
 data modify storage control:menu ShowMenu set from storage control:menu Menus.Player
 
 ## 同じページを再表示
-function control:item_set/show
+function control:menu_item/show

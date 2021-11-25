@@ -7,9 +7,11 @@
 
 ## 開けた時、アイテムをセット
 #Not クリエイティブ
-execute if entity @s[gamemode=!creative] run function control:item_set/no-creative
+execute if entity @s[gamemode=!creative] run data modify storage control:menu ShowMenu set from storage control:menu Menus.Player
 #クリエイティブ
-execute if entity @s[gamemode=creative] run function control:item_set/select
+execute if entity @s[gamemode=creative] run data modify storage control:menu ShowMenu set from storage control:menu Menus.Select
+#表示
+function control:menu_item/show
 
 ## メニュー操作中タグ付与
 tag @s add CtrlEnderChest
