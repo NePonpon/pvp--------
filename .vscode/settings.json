@@ -163,7 +163,7 @@
           "type": "file",
           "append": {
             "key": "values",
-            "elem": "control:menus/%menufolder%/close_close"
+            "elem": "control:menus/%menufolder%/close_check"
           },
           "content": {
             "values": [

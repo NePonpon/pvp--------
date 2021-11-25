@@ -1,7 +1,7 @@
 {
     "values": [
         "control:menus/show/player_menu/close_check",
-        "control:menus/show/game_settings/close_close",
-        "control:menus/show/game_rules/close_close"
+        "control:menus/show/game_settings/close_check",
+        "control:menus/show/game_rules/close_check"
     ]
 }
