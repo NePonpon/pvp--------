@@ -1,5 +1,6 @@
 {
     "values": [
-        "control:menus/show_player_menu/check"
+        "control:menus/show_player_menu/check",
+        "control:menus/menu_show_test/check"
     ]
 }

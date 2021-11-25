@@ -105,6 +105,46 @@
               "control:menus/%menufolder%/initialize"
             ]
           }
+        },
+        {
+          "rel": "data/control/functions/menus/%menufolder%/modify_check.mcfunction",
+          "type": "file",
+          "content": [
+            "#> control:menus/%menufolder%/modify_check",
+            "#",
+            "# メニューアイコンの内容を編集したいときのみ有効化する",
+            "#",
+            "",
+            "## アイテムチェック",
+            "#execute if data storage control: Item.tag{JumpTo:\"%menuname%\"} run function control:menus/%menufolder%/modify/0",
+            ""
+          ]
+        },
+        {
+          "rel": "data/control/tags/functions/menu_modify.json",
+          "type": "file",
+          "append": {
+            "key": "values",
+            "elem": "control:menus/%menufolder%/modify_check"
+          },
+          "content": {
+            "values": [
+              "control:menus/%menufolder%/modify_check"
+            ]
+          }
+        },
+        {
+          "rel": "data/control/functions/menus/%menufolder%/modify/0.mcfunction",
+          "type": "file",
+          "content": [
+            "#> control:menus/%menufolder%/modify/0",
+            "#",
+            "# メニューアイコンの内容を編集する",
+            "# 一時的な変更はここで変更する",
+            "# control: Item がメニューアイコンのアイテムデータ",
+            "#",
+            ""
+          ]
         }
       ]
     }
