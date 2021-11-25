@@ -1,0 +1,10 @@
+{
+    "values": [
+        "control:menus/show/player_menu/check",
+        "control:menus/show/game_settings/check",
+        "control:menus/show/game_rules/check",
+        "control:menus/show/player_menu/check",
+        "control:menus/show/game_settings/check",
+        "control:menus/show/game_rules/check"
+    ]
+}

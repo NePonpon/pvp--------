@@ -55,8 +55,6 @@
             "",
             "",
             "",
-            "## 同じページを再表示",
-            "function control:menu_item/show",
             ""
           ]
         },
@@ -142,6 +140,44 @@
             "# メニューアイコンの内容を編集する",
             "# 一時的な変更はここで変更する",
             "# control: Item がメニューアイコンのアイテムデータ",
+            "#",
+            ""
+          ]
+        },
+        {
+          "rel": "data/control/functions/menus/%menufolder%/close_check.mcfunction",
+          "type": "file",
+          "content": [
+            "#> control:menus/%menufolder%/close_check",
+            "#",
+            "# エンダーチェストを閉じた時に実行したいときのみ有効化する",
+            "#",
+            "",
+            "## チェック",
+            "#function control:menus/%menufolder%/close/0",
+            ""
+          ]
+        },
+        {
+          "rel": "data/control/tags/functions/menu_close.json",
+          "type": "file",
+          "append": {
+            "key": "values",
+            "elem": "control:menus/%menufolder%/close_close"
+          },
+          "content": {
+            "values": [
+              "control:menus/%menufolder%/close_check"
+            ]
+          }
+        },
+        {
+          "rel": "data/control/functions/menus/%menufolder%/close/0.mcfunction",
+          "type": "file",
+          "content": [
+            "#> control:menus/%menufolder%/close/0",
+            "#",
+            "# エンダーチェストを閉じた時に実行したいコマンドを記述",
             "#",
             ""
           ]

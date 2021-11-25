@@ -1,0 +1,10 @@
+{
+    "values": [
+        "control:menus/show/player_menu/initialize",
+        "control:menus/show/game_settings/initialize",
+        "control:menus/show/game_rules/initialize",
+        "control:menus/show/player_menu/initialize",
+        "control:menus/show/game_settings/initialize",
+        "control:menus/show/game_rules/initialize"
+    ]
+}
