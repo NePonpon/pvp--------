@@ -5,6 +5,8 @@
         "control:menus/show/game_rules/check",
         "control:menus/show/player_menu/check",
         "control:menus/show/game_settings/check",
-        "control:menus/show/game_rules/check"
+        "control:menus/show/game_rules/check",
+        "control:menus/map_select/check",
+        "control:menus/cost_select/check"
     ]
 }
