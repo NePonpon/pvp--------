@@ -8,7 +8,7 @@ data remove storage control:menu Initialize
 data modify storage control:menu Initialize set value {tag:{CtrlEnderChest:true,JumpTo:"cost_select"},Count:1b}
 
 ## アイコンとなるアイテムを指定
-data modify storage control:menu Initialize.id set value "minecraft:Soul_torch"
+data modify storage control:menu Initialize.id set value "minecraft:soul_torch"
 
 ## メニューの名前(JP)を指定
 data modify storage control:menu Initialize.tag.display.Name set value '{"text":"コスト最大値設定画面を開く","color":"yellow","bold":true}'
