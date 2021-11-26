@@ -7,6 +7,9 @@
         "control:menus/show/game_settings/check",
         "control:menus/show/game_rules/check",
         "control:menus/map_select/check",
-        "control:menus/cost_select/check"
+        "control:menus/cost_select/check",
+        "control:menus/game_settings/game_rules/commandblock_output/check",
+        "control:menus/return/game_settings/check",
+        "control:menus/game_settings/game_rules/send_command_feedback/check"
     ]
 }
