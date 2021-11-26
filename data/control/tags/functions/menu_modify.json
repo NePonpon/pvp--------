@@ -3,6 +3,7 @@
         "control:menus/show/player_menu/modify_check",
         "control:menus/show/game_settings/modify_check",
         "control:menus/show/game_rules/modify_check",
-        "control:menus/game_settings/game_rules/commandblock_output/modify_check"
+        "control:menus/game_settings/game_rules/commandblock_output/modify_check",
+        "control:menus/return/game_settings/modify_check"
     ]
 }

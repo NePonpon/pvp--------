@@ -3,6 +3,7 @@
         "control:menus/show/player_menu/close_check",
         "control:menus/show/game_settings/close_check",
         "control:menus/show/game_rules/close_check",
-        "control:menus/game_settings/game_rules/commandblock_output/close_check"
+        "control:menus/game_settings/game_rules/commandblock_output/close_check",
+        "control:menus/return/game_settings/close_check"
     ]
 }

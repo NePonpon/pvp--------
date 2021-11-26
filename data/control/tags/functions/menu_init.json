@@ -3,6 +3,7 @@
         "control:menus/show/player_menu/initialize",
         "control:menus/show/game_settings/initialize",
         "control:menus/show/game_rules/initialize",
-        "control:menus/game_settings/game_rules/commandblock_output/initialize"
+        "control:menus/game_settings/game_rules/commandblock_output/initialize",
+        "control:menus/return/game_settings/initialize"
     ]
 }
