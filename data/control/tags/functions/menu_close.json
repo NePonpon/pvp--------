@@ -7,6 +7,11 @@
         "control:menus/cost_select/close_check",
         "control:menus/game_settings/game_rules/commandblock_output/close_check",
         "control:menus/return/game_settings/close_check",
-        "control:menus/game_settings/game_rules/send_command_feedback/close_check"
+        "control:menus/game_settings/game_rules/send_command_feedback/close_check",
+        "control:menus/player/team_member/red/close_check",
+        "control:menus/player/team_member/blue/close_check",
+        "control:menus/player/team_member/green/close_check",
+        "control:menus/player/team_member/yellow/close_check",
+        "control:menus/player/team_member/watch_game/close_check"
     ]
 }

@@ -7,6 +7,11 @@
         "control:menus/cost_select/modify_check",
         "control:menus/game_settings/game_rules/commandblock_output/modify_check",
         "control:menus/return/game_settings/modify_check",
-        "control:menus/game_settings/game_rules/send_command_feedback/modify_check"
+        "control:menus/game_settings/game_rules/send_command_feedback/modify_check",
+        "control:menus/player/team_member/red/modify_check",
+        "control:menus/player/team_member/blue/modify_check",
+        "control:menus/player/team_member/green/modify_check",
+        "control:menus/player/team_member/yellow/modify_check",
+        "control:menus/player/team_member/watch_game/modify_check"
     ]
 }
