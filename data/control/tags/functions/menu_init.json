@@ -8,6 +8,10 @@
         "control:menus/game_settings/game_rules/commandblock_output/initialize",
         "control:menus/return/game_settings/initialize",
         "control:menus/game_settings/game_rules/send_command_feedback/initialize",
-        "control:menus/player/team_member/red/initialize"
+        "control:menus/player/team_member/red/initialize",
+        "control:menus/player/team_member/blue/initialize",
+        "control:menus/player/team_member/green/initialize",
+        "control:menus/player/team_member/yellow/initialize",
+        "control:menus/player/team_member/watch_game/initialize"
     ]
 }
