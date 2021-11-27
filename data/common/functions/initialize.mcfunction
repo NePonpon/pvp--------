@@ -3,8 +3,10 @@
 # 全システム共通初期化処理
 #
 
+#> Scoreboard-Objectives
 scoreboard objectives add Common dummy
 scoreboard objectives add Calc dummy
+scoreboard objectives add PlayerNameNumber dummy
 
 #> forceload
 forceload add 0 0
