@@ -12,6 +12,7 @@
         "control:menus/player/team_member/blue/modify_check",
         "control:menus/player/team_member/green/modify_check",
         "control:menus/player/team_member/yellow/modify_check",
-        "control:menus/player/team_member/watch_game/modify_check"
+        "control:menus/player/team_member/watch_game/modify_check",
+        "control:menus/return/select/modify_check"
     ]
 }

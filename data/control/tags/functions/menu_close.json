@@ -12,6 +12,7 @@
         "control:menus/player/team_member/blue/close_check",
         "control:menus/player/team_member/green/close_check",
         "control:menus/player/team_member/yellow/close_check",
-        "control:menus/player/team_member/watch_game/close_check"
+        "control:menus/player/team_member/watch_game/close_check",
+        "control:menus/return/select/close_check"
     ]
 }

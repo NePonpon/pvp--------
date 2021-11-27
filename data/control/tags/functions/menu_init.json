@@ -12,6 +12,7 @@
         "control:menus/player/team_member/blue/initialize",
         "control:menus/player/team_member/green/initialize",
         "control:menus/player/team_member/yellow/initialize",
-        "control:menus/player/team_member/watch_game/initialize"
+        "control:menus/player/team_member/watch_game/initialize",
+        "control:menus/return/select/initialize"
     ]
 }
