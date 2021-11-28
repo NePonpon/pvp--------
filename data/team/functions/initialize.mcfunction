@@ -15,12 +15,12 @@ team modify red color red
 team modify blue color blue
 team modify green color green
 team modify yellow color yellow
-team modify gray color gray
+team modify watch_game color gray
 team modify red prefix {"text":"","color":"red"}
 team modify blue prefix {"text":"","color":"bluu"}
 team modify green prefix {"text":"","color":"green"}
 team modify yellow prefix {"text":"","color":"yellow"}
-team modify yellow prefix {"text":"","color":"gray"}
+team modify watch_game prefix {"text":"","color":"gray"}
 
 ## スコアボード
 scoreboard objectives add TeamNumber dummy {"text":"チーム番号"}

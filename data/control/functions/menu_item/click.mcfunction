@@ -5,6 +5,9 @@
 
 scoreboard players set @s CtrlEnderChest 0
 
+## クリックサウンド
+playsound minecraft:block.wooden_button.click_off master @s ~ ~ ~ 1 1
+
 ## 各メニュー別に分岐
 function #control:menus
 
