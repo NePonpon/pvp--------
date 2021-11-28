@@ -10,6 +10,7 @@
         "control:menus/cost_select/modify_check",
         "control:menus/game_settings/game_rules/commandblock_output/modify_check",
         "control:menus/return/game_settings/modify_check",
-        "control:menus/game_settings/game_rules/send_command_feedback/modify_check"
+        "control:menus/game_settings/game_rules/send_command_feedback/modify_check",
+        "control:menus/job_select/modify_check"
     ]
 }

@@ -20,7 +20,7 @@ data modify storage control:menu Initialize.tag.display.Lore set value []
 data modify storage control:menu Initialize.Slot set value 4b
 
 ## その他追加したい情報を指定(任意)
-#data modify storage control:menu Initialize.tag merge value {}
+data modify storage control:menu Initialize.tag merge value {}
 
 ## 追加先のメニューページを指定(変更は任意)
 data modify storage control:menu Menus.GameSettings append from storage control:menu Initialize
