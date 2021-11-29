@@ -11,7 +11,7 @@ data modify storage control:menu Initialize set value {tag:{CtrlEnderChest:true,
 data modify storage control:menu Initialize.id set value "minecraft:diamond_sword"
 
 ## メニューの名前(JP)を指定
-data modify storage control:menu Initialize.tag.display.Name set value '{"text":"ジョブ設定画面を開く","color":"blue"}'
+data modify storage control:menu Initialize.tag.display.Name set value '{"text":"ジョブ設定画面を開く","color":"blue","italic":false}'
 
 ## 説明文を指定(任意)
 #data modify storage control:menu Initialize.tag.display.Lore set value []
@@ -20,7 +20,7 @@ data modify storage control:menu Initialize.tag.display.Name set value '{"text":
 data modify storage control:menu Initialize.Slot set value 0b
 
 ## その他追加したい情報を指定(任意)
-data modify storage control:menu Initialize.tag merge value {HideFlag:63}
+data modify storage control:menu Initialize.tag merge value {HideFlags:63}
 
 ## 追加先のメニューページを指定(変更は任意)
 data modify storage control:menu Menus.Player append from storage control:menu Initialize
