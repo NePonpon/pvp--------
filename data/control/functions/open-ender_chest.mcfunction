@@ -17,10 +17,12 @@ function control:menu_item/show
 tag @s add CtrlEnderChest
 
 ## メニュー操作tick起動
-schedule function control:tick 1t
+schedule function control:tick 1t replace
 
 ## close検知準備
 item replace entity @s armor.head with stone_button{EnderChestClose:true}
 
 scoreboard players reset @s CtrlEnderChest
 advancement revoke @s only control:open-ender_chest
+
+tellraw @a [{"selector":"@s"}," がメニューを開いた"]
