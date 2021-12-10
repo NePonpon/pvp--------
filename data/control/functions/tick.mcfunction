@@ -9,4 +9,4 @@ execute as @a[scores={CtrlEnderChest=1}] at @s run function control:menu_item/cl
 scoreboard players reset @a CtrlEnderChest
 
 ## tick loop
-execute if entity @a[tag=CtrlEnderChest] run schedule function control:tick 1t
+execute if entity @a[tag=CtrlEnderChest] run schedule function control:tick 2t replace

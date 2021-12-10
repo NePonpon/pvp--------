@@ -5,11 +5,16 @@
 # エンダーチェストを開けた時、設定画面を表示する。
 #
 
+## 個人用ストレージ呼び出し
+function oh_my_dat:please
+
 ## 開けた時、アイテムをセット
 #Not クリエイティブ
 execute if entity @s[gamemode=!creative] run data modify storage control:menu ShowMenu set from storage control:menu Menus.Player
 #クリエイティブ
 execute if entity @s[gamemode=creative] run data modify storage control:menu ShowMenu set from storage control:menu Menus.Select
+#反映
+function control:menu_apply
 #表示
 function control:menu_item/show
 
@@ -17,7 +22,7 @@ function control:menu_item/show
 tag @s add CtrlEnderChest
 
 ## メニュー操作tick起動
-schedule function control:tick 1t
+schedule function control:tick 1t replace
 
 ## close検知準備
 item replace entity @s armor.head with stone_button{EnderChestClose:true}

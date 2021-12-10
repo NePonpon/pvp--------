@@ -5,3 +5,5 @@
 
 ## セレクト画面にセット
 data modify storage control:menu ShowMenu set from storage control:menu Menus.Select
+## 反映
+function control:menu_apply
