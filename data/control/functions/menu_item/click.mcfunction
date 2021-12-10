@@ -3,6 +3,9 @@
 # メニューがクリックされたら実行
 #
 
+## 個人用ストレージ呼び出し
+function oh_my_dat:please
+
 scoreboard players set @s CtrlEnderChest 0
 
 ## クリックサウンド
