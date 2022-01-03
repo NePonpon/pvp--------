@@ -187,5 +187,6 @@
   ],
   "mcdutil.createDatapackTemplate.defaultFolder": false,
   "mcdutil.createDatapackTemplate.defaultLoadAndTick": false,
-  "mcdutil.createDatapackTemplate.defaultVanillaData": false
+  "mcdutil.createDatapackTemplate.defaultVanillaData": false,
+  "datapack.env.cmdVersion": "1.17"
 }
