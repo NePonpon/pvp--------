@@ -16,6 +16,9 @@
 #> LootTable
 #define loot_table common:player_name
 
+#> tag/item
+#define tag/item #common:all
+
 #> function
 # 外部ライブラリ - 個別用ストレージOhMyDat
 #define function oh_my_dat:please

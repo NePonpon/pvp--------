@@ -17,4 +17,4 @@ function #control:menus
 ## 同じページを再表示
 function control:menu_item/show
 
-clear @s #control:all{CtrlEnderChest:true}
+clear @s #common:all{CtrlEnderChest:true}
