@@ -55,7 +55,8 @@
                                             "type": "minecraft:dynamic",
                                             "name": "minecraft:contents"
                                         }
-                                    ]
+                                    ],
+                                    "type": "shulker_box"
                                 }
                             ]
                         }
