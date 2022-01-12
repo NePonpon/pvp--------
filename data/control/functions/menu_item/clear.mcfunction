@@ -12,6 +12,9 @@ data modify storage control: EnderItems set from entity @s EnderItems
 ## 操作用アイテムを削除
 data remove storage control: EnderItems[{tag:{CtrlEnderChest:true}}]
 
+## プレイヤー配布アイテムを削除
+data remove storage control: EnderItems[{tag:{PlayerItem:true}}]
+
 ## 残っているアイテムは返却用
 # シュルカーボックスに移してプレイヤーの位置にSpawn
 # 即時取得させる。

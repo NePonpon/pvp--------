@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "Jump": {
+      "trigger": "tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "entity_scores",
+            "entity": "this",
+            "scores": {
+              "Triggers.Jump": {
+                "min": 1,
+                "max": 2147483647
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "player:triggers/jump"
+  }
+}

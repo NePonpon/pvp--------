@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "Attack": {
+      "trigger": "player_hurt_entity"
+    }
+  },
+  "rewards": {
+    "function": "player:triggers/attack"
+  }
+}

@@ -1,6 +1,8 @@
 {
     "values": [
       "team:initialize",
-      "control:initialize"
+      "control:initialize",
+      "item:initialize",
+      "player:initialize"
     ]
 }

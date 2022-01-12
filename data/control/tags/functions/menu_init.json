@@ -14,6 +14,15 @@
         "control:menus/player/team_member/green/initialize",
         "control:menus/player/team_member/yellow/initialize",
         "control:menus/player/team_member/watch_game/initialize",
-        "control:menus/return/select/initialize"
+        "control:menus/return/select/initialize",
+        "control:menus/show/item_menu_hub/initialize",
+        "control:menus/item_menu/hub/armors/initialize",
+        "control:menus/item_menu/hub/magics/initialize",
+        "control:menus/item_menu/hub/skills/initialize",
+        "control:menus/item_menu/hub/weapons/initialize",
+        "control:menus/item_menu/next/initialize",
+        "control:menus/item_menu/previous/initialize",
+        "control:menus/return/player_menu/initialize",
+        "control:menus/return/item_menu_hub/initialize"
     ]
 }

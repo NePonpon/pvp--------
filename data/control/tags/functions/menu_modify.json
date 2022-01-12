@@ -14,6 +14,15 @@
         "control:menus/player/team_member/green/modify_check",
         "control:menus/player/team_member/yellow/modify_check",
         "control:menus/player/team_member/watch_game/modify_check",
-        "control:menus/return/select/modify_check"
+        "control:menus/return/select/modify_check",
+        "control:menus/show/item_menu_hub/modify_check",
+        "control:menus/item_menu/hub/armors/modify_check",
+        "control:menus/item_menu/hub/magics/modify_check",
+        "control:menus/item_menu/hub/skills/modify_check",
+        "control:menus/item_menu/hub/weapons/modify_check",
+        "control:menus/item_menu/next/modify_check",
+        "control:menus/item_menu/previous/modify_check",
+        "control:menus/return/player_menu/modify_check",
+        "control:menus/return/item_menu_hub/modify_check"
     ]
 }

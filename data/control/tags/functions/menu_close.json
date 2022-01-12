@@ -14,6 +14,15 @@
         "control:menus/player/team_member/green/close_check",
         "control:menus/player/team_member/yellow/close_check",
         "control:menus/player/team_member/watch_game/close_check",
-        "control:menus/return/select/close_check"
+        "control:menus/return/select/close_check",
+        "control:menus/show/item_menu_hub/close_check",
+        "control:menus/item_menu/hub/armors/close_check",
+        "control:menus/item_menu/hub/magics/close_check",
+        "control:menus/item_menu/hub/skills/close_check",
+        "control:menus/item_menu/hub/weapons/close_check",
+        "control:menus/item_menu/next/close_check",
+        "control:menus/item_menu/previous/close_check",
+        "control:menus/return/player_menu/close_check",
+        "control:menus/return/item_menu_hub/close_check"
     ]
 }
