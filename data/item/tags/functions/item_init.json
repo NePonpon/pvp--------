@@ -1,8 +1,8 @@
 {
   "values": [
-    "#item:item_init/weapons",
-    "#item:item_init/skills",
-    "#item:item_init/magics",
-    "#item:item_init/armors"
+    "#item:item_init/weapon",
+    "#item:item_init/skill",
+    "#item:item_init/magic",
+    "#item:item_init/armor"
   ]
 }
