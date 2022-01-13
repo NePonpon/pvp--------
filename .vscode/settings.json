@@ -183,6 +183,298 @@
           ]
         }
       ]
+    },
+    {
+      "label": "特技アイテム追加",
+      "picked": false,
+      "description": "特技アイテムを追加したいときのテンプレ",
+      "detail": "アイテムに関するfunctionを生成します。カテゴリとアイテムの名前の指定が必要です。",
+      "customQuestion": [
+        {
+          "question": "指定するカテゴリを入力",
+          "name": "itemcategory",
+          "pattern": "(weapon|magic|skill|armor)",
+          "patternErrorMessage": "正しいカテゴリ名を入力してください。(weapon|magic|skill|armor)"
+        },
+        {
+          "question": "フォルダーの名前(Eng)を入力",
+          "name": "itemfolder",
+          "pattern": "([a-z0-9/._-])+",
+          "patternErrorMessage": "[a-z0-9/._-]以外の文字が含まれています。"
+        }
+      ],
+      "generates": [
+        {
+          "rel": "data/item/functions/items/%itemcategory%/%itemfolder%/initialize.mcfunction",
+          "type": "file",
+          "content": [
+            "#> item:items/%itemcategory%/%itemfolder%/initialize",
+            "#",
+            "# アイテムの設定をする",
+            "#",
+            "",
+            "# 初期化",
+            "data remove storage item:items Initialize",
+            "data modify storage item:items Initialize set value {tag:{PlayerItem:true,Category:\"%itemcategory%\",ItemName:\"%itemfolder%\"},Count:1b}",
+            "",
+            "## アイテムIDを指定",
+            "data modify storage item:items Initialize.id set value \"minecraft:\"",
+            "",
+            "## アイテムの名前を指定(任意)",
+            "# data modify storage item:items Initialize.tag.display.Name set value ''",
+            "",
+            "## アイテムの説明文を指定(任意)(共通項目の下に追加)",
+            "# data modify storage item:items Initialize.tag.display.Lore set value []",
+            "",
+            "## アイテムに追加したい情報を指定(任意)",
+            "# data modify storage item:items Initialize.tag merge value {}",
+            "",
+            "## アイテムのコストを指定",
+            "data modify storage item:items Initialize.tag.Cost set value ",
+            "",
+            "## アイテムのMPを指定(任意)",
+            "# data modify storage item:items Initialize.tag.MP set value ",
+            "",
+            "## アイテムのインターバルを指定(任意)",
+            "# data modify storage item:items Initialize.tag.Interval set value ",
+            "",
+            "# 以下システム処理",
+            "function item:common_lore/",
+            "data modify storage item: AllItems append from storage item:items Initialize",
+            ""
+          ]
+        },
+        {
+          "rel": "data/item/functions/items/%itemcategory%/%itemfolder%/attack.mcfunction",
+          "type": "file",
+          "content": [
+            "#> item:items/%itemcategory%/%itemfolder%/attack",
+            "#",
+            "# 攻撃時に処理を実行するための条件を指定する",
+            "#  item:items/%itemcategory%/%itemfolder%/attack/0",
+            "# を実行するようにする",
+            "#",
+            "# このアイテムかどうかの判別は",
+            "#",
+            "# <Item>.tag{ItemName:\"%itemfolder%\"}",
+            "#",
+            "# のパスと条件を使う",
+            "#",
+            "",
+            "# メインハンドにアイテムを持っていた場合の例",
+            "# execute if data entity @s SelectedItem.tag{ItemName:\"%itemfolder%\"} run function item:items/%itemcategory%/%itemfolder%/attack/0",
+            ""
+          ]
+        },
+        {
+          "rel": "data/item/functions/items/%itemcategory%/%itemfolder%/attack/0.mcfunction",
+          "type": "file",
+          "content": [
+            "#> item:items/%itemcategory%/%itemfolder%/attack/0",
+            "#",
+            "# 攻撃時に実行する処理を記入",
+            "#",
+            ""
+          ]
+        },
+        {
+          "rel": "data/item/functions/items/%itemcategory%/%itemfolder%/click.mcfunction",
+          "type": "file",
+          "content": [
+            "#> item:items/%itemcategory%/%itemfolder%/click",
+            "#",
+            "# アイテムクリック時に処理を実行するための条件を指定する",
+            "#  item:items/%itemcategory%/%itemfolder%/click/0",
+            "# を実行するようにする",
+            "#",
+            "# このアイテムかどうかの判別は",
+            "#",
+            "# <Item>.tag{ItemName:\"%itemfolder%\"}",
+            "#",
+            "# のパスと条件を使う",
+            "#",
+            "",
+            "# メインハンドにアイテムを持っていた場合の例",
+            "# execute if data entity @s SelectedItem.tag{ItemName:\"%itemfolder%\"} run function item:items/%itemcategory%/%itemfolder%/click/0",
+            ""
+          ]
+        },
+        {
+          "rel": "data/item/functions/items/%itemcategory%/%itemfolder%/click/0.mcfunction",
+          "type": "file",
+          "content": [
+            "#> item:items/%itemcategory%/%itemfolder%/click/0",
+            "#",
+            "# アイテムを右クリック時に実行する処理を記入",
+            "#",
+            ""
+          ]
+        },
+        {
+          "rel": "data/item/functions/items/%itemcategory%/%itemfolder%/jump.mcfunction",
+          "type": "file",
+          "content": [
+            "#> item:items/%itemcategory%/%itemfolder%/jump",
+            "#",
+            "# ジャンプ時に処理を実行するための条件を指定する",
+            "#  item:items/%itemcategory%/%itemfolder%/jump/0",
+            "# を実行するようにする",
+            "#",
+            "# このアイテムかどうかの判別は",
+            "#",
+            "# <Item>.tag{ItemName:\"%itemfolder%\"}",
+            "#",
+            "# のパスと条件を使う",
+            "#",
+            "",
+            "# メインハンドにアイテムを持っていた場合の例",
+            "# execute if data entity @s SelectedItem.tag{ItemName:\"%itemfolder%\"} run function item:items/%itemcategory%/%itemfolder%/jump/0",
+            ""
+          ]
+        },
+        {
+          "rel": "data/item/functions/items/%itemcategory%/%itemfolder%/jump/0.mcfunction",
+          "type": "file",
+          "content": [
+            "#> item:items/%itemcategory%/%itemfolder%/jump/0",
+            "#",
+            "# ジャンプ時に実行する処理を入力",
+            "#",
+            ""
+          ]
+        },
+        {
+          "rel": "data/item/functions/items/%itemcategory%/%itemfolder%/others.mcfunction",
+          "type": "file",
+          "content": [
+            "#> item:items/%itemcategory%/%itemfolder%/others",
+            "#",
+            "# 自由なタイミングで実行するための条件を指定する",
+            "#  item:items/%itemcategory%/%itemfolder%/others/0",
+            "# を実行するようにする",
+            "#",
+            "# このアイテムかどうかの判別は",
+            "#",
+            "# <Item>.tag{ItemName:\"%itemfolder%\"}",
+            "#",
+            "# のパスと条件を使う",
+            "#",
+            "",
+            "# メインハンドにアイテムを持っていた場合の例",
+            "# execute if data entity @s SelectedItem.tag{ItemName:\"%itemfolder%\"} run function item:items/%itemcategory%/%itemfolder%/others/0",
+            ""
+          ]
+        },
+        {
+          "rel": "data/item/functions/items/%itemcategory%/%itemfolder%/others/0.mcfunction",
+          "type": "file",
+          "content": [
+            "#> item:items/%itemcategory%/%itemfolder%/others/0",
+            "#",
+            "# 既存のトリガーを使用しない処理を入力",
+            "#",
+            ""
+          ]
+        },
+        {
+          "rel": "data/item/functions/items/%itemcategory%/%itemfolder%/sneak.mcfunction",
+          "type": "file",
+          "content": [
+            "#> item:items/%itemcategory%/%itemfolder%/sneak",
+            "#",
+            "# スニーク時に処理を実行するための条件を指定する",
+            "#  item:items/%itemcategory%/%itemfolder%/sneek/0",
+            "# を実行するようにする",
+            "#",
+            "# このアイテムかどうかの判別は",
+            "#",
+            "# <Item>.tag{ItemName:\"%itemfolder%\"}",
+            "#",
+            "# のパスと条件を使う",
+            "#",
+            "",
+            "# メインハンドにアイテムを持っていた場合の例",
+            "# execute if data entity @s SelectedItem.tag{ItemName:\"%itemfolder%\"} run function item:items/%itemcategory%/%itemfolder%/sneak/0",
+            ""
+          ]
+        },
+        {
+          "rel": "data/item/functions/items/%itemcategory%/%itemfolder%/sneak/0.mcfunction",
+          "type": "file",
+          "content": [
+            "#> item:items/%itemcategory%/%itemfolder%/sneak/0",
+            "#",
+            "# スニーク時に実行する処理を記入",
+            "#",
+            ""
+          ]
+        },
+        {
+          "rel": "data/item/tags/functions/item_init/%itemcategory%.json",
+          "type": "file",
+          "content": {
+            "values": [
+              "item:items/%itemcategory%/%itemfolder%/initialize"
+            ]
+          },
+          "append": {
+            "key": "values",
+            "elem": "item:items/%itemcategory%/%itemfolder%/initialize"
+          }
+        },
+        {
+          "rel": "data/item/tags/functions/triggers/attack.json",
+          "type": "file",
+          "content": {
+            "values": [
+              "item:items/%itemcategory%/%itemfolder%/attack"
+            ]
+          },
+          "append": {
+            "key": "values",
+            "elem": "item:items/%itemcategory%/%itemfolder%/attack"
+          }
+        },
+        {
+          "rel": "data/item/tags/functions/triggers/click.json",
+          "type": "file",
+          "content": {
+            "values": [
+              "item:items/%itemcategory%/%itemfolder%/click"
+            ]
+          },
+          "append": {
+            "key": "values",
+            "elem": "item:items/%itemcategory%/%itemfolder%/click"
+          }
+        },
+        {
+          "rel": "data/item/tags/functions/triggers/jump.json",
+          "type": "file",
+          "content": {
+            "values": [
+              "item:items/%itemcategory%/%itemfolder%/jump"
+            ]
+          },
+          "append": {
+            "key": "values",
+            "elem": "item:items/%itemcategory%/%itemfolder%/jump"
+          }
+        },
+        {
+          "rel": "data/item/tags/functions/triggers/sneak.json",
+          "type": "file",
+          "content": {
+            "values": [
+              "item:items/%itemcategory%/%itemfolder%/sneak"
+            ]
+          },
+          "append": {
+            "key": "values",
+            "elem": "item:items/%itemcategory%/%itemfolder%/sneak"
+          }
+        }
+      ]
     }
   ],
   "mcdutil.createDatapackTemplate.defaultFolder": false,
