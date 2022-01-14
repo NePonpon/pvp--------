@@ -4,7 +4,7 @@
 #
 
 ## プレイヤーデータ取得
-function common:get_nbt/player/inventory
+function common:get/player/nbt/inventory
 
 ## ジャンプ時アイテム処理実行
 function #item:triggers/click

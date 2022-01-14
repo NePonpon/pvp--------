@@ -4,7 +4,7 @@
 #
 
 ## プレイヤーデータ取得
-function common:get_nbt/player/inventory
+function common:get/player/nbt/inventory
 
 ## 以下スニーク中の処理
 execute if score @s Triggers.Sneak matches 3 run scoreboard players add @s SneakTime 1

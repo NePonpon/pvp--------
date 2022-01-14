@@ -1,7 +1,7 @@
-#> common:player_name/reset
+#> common:get/player/name/reset
 #
 # プレイヤー名取得処理のリセットをする  
-# `common:player_name/get`  
+# `common:get/player/name/`  
 # を実行する前に実行する。
 #
 

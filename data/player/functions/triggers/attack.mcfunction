@@ -4,7 +4,7 @@
 #
 
 ## プレイヤーデータ取得
-function common:get_nbt/player/inventory
+function common:get/player/nbt/inventory
 
 ## 攻撃時アイテム処理実行
 function #item:triggers/attack

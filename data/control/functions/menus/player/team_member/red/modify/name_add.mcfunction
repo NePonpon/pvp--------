@@ -4,8 +4,8 @@
 #
 
 ## プレイヤー名を取得
-function common:player_name/reset
-execute as @a[team=red] run function common:player_name/get
+function common:get/player/name/reset
+execute as @a[team=red] run function common:get/player/name/
 
 ## Loreに追加する
 function control:menus/player/team_member/red/modify/lore_add

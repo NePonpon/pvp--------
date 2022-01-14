@@ -1,4 +1,4 @@
-#> common:get_nbt/player/inventory
+#> common:get/player/nbt/inventory
 #
 # NBTを取得してストレージに保存する  
 # プレイヤーのinventoryを取得する
