@@ -7,7 +7,7 @@
 # に取得した順番が記録される。
 #
 # 必ずこのfunctionを実行する前に、  
-# `common:player_name/reset`  
+# `common:get/player/name/reset`  
 # を実行すること。
 #
 # @input as player

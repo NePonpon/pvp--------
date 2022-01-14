@@ -40,4 +40,3 @@ data remove storage common: Inventorys
     data modify storage common: Inventorys.HandItems[0] set from storage common: Inventorys.SelectedItem
     data modify storage common: Inventorys.HandItems[1] set from storage common: Inventorys.Inventory[{Slot:-106b}]
     data remove storage common: Inventorys.HandItems[].Slot
-
