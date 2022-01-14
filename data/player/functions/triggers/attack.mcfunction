@@ -3,6 +3,9 @@
 # プレイヤーが別エンティティに攻撃したときに実行
 #
 
+## プレイヤーデータ取得
+function common:get_nbt/player/inventory
+
 ## 攻撃時アイテム処理実行
 function #item:triggers/attack
 

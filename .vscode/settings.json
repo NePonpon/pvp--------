@@ -262,7 +262,7 @@
             "#",
             "",
             "# メインハンドにアイテムを持っていた場合の例",
-            "# execute if data entity @s SelectedItem.tag{ItemName:\"%itemfolder%\"} run function item:items/%itemcategory%/%itemfolder%/attack/0",
+            "# execute if data storage common: Inventorys.SelectedItem.tag{ItemName:\"%itemfolder%\"} run function item:items/%itemcategory%/%itemfolder%/attack/0",
             ""
           ]
         },
@@ -295,7 +295,7 @@
             "#",
             "",
             "# メインハンドにアイテムを持っていた場合の例",
-            "# execute if data entity @s SelectedItem.tag{ItemName:\"%itemfolder%\"} run function item:items/%itemcategory%/%itemfolder%/click/0",
+            "# execute if data storage common: Inventorys.SelectedItem.tag{ItemName:\"%itemfolder%\"} run function item:items/%itemcategory%/%itemfolder%/click/0",
             ""
           ]
         },
@@ -328,7 +328,7 @@
             "#",
             "",
             "# メインハンドにアイテムを持っていた場合の例",
-            "# execute if data entity @s SelectedItem.tag{ItemName:\"%itemfolder%\"} run function item:items/%itemcategory%/%itemfolder%/jump/0",
+            "# execute if data storage common: Inventorys.SelectedItem.tag{ItemName:\"%itemfolder%\"} run function item:items/%itemcategory%/%itemfolder%/jump/0",
             ""
           ]
         },
@@ -361,7 +361,7 @@
             "#",
             "",
             "# メインハンドにアイテムを持っていた場合の例",
-            "# execute if data entity @s SelectedItem.tag{ItemName:\"%itemfolder%\"} run function item:items/%itemcategory%/%itemfolder%/others/0",
+            "# execute if data storage common: Inventorys.SelectedItem.tag{ItemName:\"%itemfolder%\"} run function item:items/%itemcategory%/%itemfolder%/others/0",
             ""
           ]
         },
@@ -394,7 +394,7 @@
             "#",
             "",
             "# メインハンドにアイテムを持っていた場合の例",
-            "# execute if data entity @s SelectedItem.tag{ItemName:\"%itemfolder%\"} run function item:items/%itemcategory%/%itemfolder%/sneak/0",
+            "# execute if data storage common: Inventorys.SelectedItem.tag{ItemName:\"%itemfolder%\"} run function item:items/%itemcategory%/%itemfolder%/sneak/0",
             ""
           ]
         },
